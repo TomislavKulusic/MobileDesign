@@ -1,0 +1,179 @@
+[{
+    "name": "Ducan",
+    "address": "lokacija1",
+    "image": "./../../assets/images/store1.jpg",
+    "items": [{
+      "categoryName": "Fruit and Vegies",
+      "items": [{
+          "name": "Apple",
+          "price": 3,
+          "img": "./../../assets/images/apple.jpg"
+        },
+        {
+          "name": "Banana",
+          "price": 7.3,
+          "img": "./../../assets/images/banana.jpg"
+        },
+        {
+          "name": "Blueberry",
+          "price": 10.42,
+          "img": "./../../assets/images/blueberry.jpg"
+        },
+        {
+          "name": "Grape",
+          "price": 4.5,
+          "img": "./../../assets/images/grape.jpg"
+        },
+        {
+          "name": "Peas",
+          "price": 2.66,
+          "img": "./../../assets/images/peas.jpg"
+        },
+        {
+          "name": "Orange",
+          "price": 3.32,
+          "img": "./../../assets/images/orange.jpg"
+        },
+        {
+          "name": "Lemon",
+          "price": 12.12,
+          "img": "./../../assets/images/lemon.jpg"
+        },
+        {
+          "name": "Watermelon",
+          "price": 1.32,
+          "img": "./../../assets/images/watermelon.jpg"
+        },
+        {
+          "name": "Strawberry",
+          "price": 12.2,
+          "img": "./../../assets/images/strawberry.jpg"
+        }
+      ]
+    }]
+  },
+
+  {
+    "name": "Ducan1",
+    "address": "lokacija2",
+    "image": "./../../assets/images/store2.jpg",
+    "items": [{
+      "categoryName": "Fruit and Vegies",
+      "items": [{
+          "name": "Apple",
+          "price": 3,
+          "img": "./../../assets/images/apple.jpg"
+        },
+        {
+          "name": "Banana",
+          "price": 7.3,
+          "img": "./../../assets/images/banana.jpg"
+        },
+        {
+          "name": "Blueberry",
+          "price": 10.42,
+          "img": "./../../assets/images/blueberry.jpg"
+        },
+
+        {
+          "name": "Peas",
+          "price": 2.66,
+          "img": "./../../assets/images/peas.jpg"
+        },
+        {
+          "name": "Orange",
+          "price": 3.32,
+          "img": "./../../assets/images/orange.jpg"
+        },
+        {
+          "name": "Lemon",
+          "price": 12.12,
+          "img": "./../../assets/images/lemon.jpg"
+        },
+        {
+          "name": "Strawberry",
+          "price": 12.2,
+          "img": "./../../assets/images/strawberry.jpg"
+        },
+        {
+          "name": "Carrot",
+          "price": 8,
+          "img": "./../../assets/images/carrot.jpg"
+        },
+        {
+          "name": "Broccoli",
+          "price": 6.42,
+          "img": "./../../assets/images/broccoli.jpg"
+        }
+      ]
+    }]
+  },
+
+  {
+    "name": "Ducan2",
+    "address": "lokacija2",
+    "image": "./../../assets/images/store3.jpg",
+    "items": [{
+      "categoryName": "Fruit and Vegies",
+      "items": [{
+          "name": "Apple",
+          "price": 3,
+          "img": "./../../assets/images/apple.jpg"
+        },
+        {
+          "name": "Banana",
+          "price": 7.3,
+          "img": "./../../assets/images/banana.jpg"
+        },
+        {
+          "name": "Blueberry",
+          "price": 10.42,
+          "img": "./../../assets/images/blueberry.jpg"
+        },
+
+        {
+          "name": "Peas",
+          "price": 2.66,
+          "img": "./../../assets/images/peas.jpg"
+        },
+        {
+          "name": "Orange",
+          "price": 3.32,
+          "img": "./../../assets/images/orange.jpg"
+        },
+        {
+          "name": "Lemon",
+          "price": 12.12,
+          "img": "./../../assets/images/lemon.jpg"
+        },
+        {
+          "name": "Strawberry",
+          "price": 12.2,
+          "img": "./../../assets/images/strawberry.jpg"
+        },
+        {
+          "name": "Carrot",
+          "price": 8,
+          "img": "./../../assets/images/carrot.jpg"
+        },
+        {
+          "name": "Broccoli",
+          "price": 6.42,
+          "img": "./../../assets/images/broccoli.jpg"
+        },
+        {
+          "name": "Pineapple",
+          "price": 15.12,
+          "img": "./../../assets/images/pineapple.jpg"
+        },
+        {
+          "name": "Cauliflower",
+          "price": 2.22,
+          "img": "./../../assets/images/cauliflower.jpg"
+        }
+      ]
+    }]
+  }
+
+
+]

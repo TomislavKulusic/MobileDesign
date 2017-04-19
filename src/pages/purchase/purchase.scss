@@ -1,0 +1,20 @@
+page-purchase {
+  #name {
+    float: left;
+    font-size: 1.0em;
+  }
+  #price {
+    float: right;
+    font-size: 1.0em;
+  }
+
+  img {
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+
+  .item-md p {
+    margin: 6%;
+  }
+}

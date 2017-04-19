@@ -1,0 +1,67 @@
+page-store-page {
+  .card {
+    width: 60%;
+    margin: 5% 20%;
+     border: 1px solid rgb(46, 204, 113);
+    .button-md {
+      background-color:  rgb(46, 204, 113);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 3%;
+    }
+
+    #price {
+      
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 3%;
+      
+    }
+
+    #name {
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 3%;
+      
+    }
+  }
+  .card .item {
+    height: 190px;
+  }
+  .footer-md {
+    border-top: 1px solid rgb(46, 204, 113);
+    .button-md {
+      background:rgb(46, 204, 113);
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .toolbar-background {
+      background-color: white;
+    }
+  }
+  ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+
+    
+      
+   
+  }
+
+  
+
+  
+}

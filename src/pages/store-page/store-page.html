@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>   
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+  <h3>Groceries</h3>
+  <ion-card *ngFor="let g of groceries">
+    <ion-item>
+      <p id = "name">{{g.name}}</p>
+      <p id = "price">Price: {{g.price}}</p>
+      <img src = "{{g.img}}">
+
+      <button ion-button round (click)="add(g);">Add</button>
+    </ion-item>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p>Number of items in basket: {{additem}}</p>
+    <button id="buy" ion-button round (click)="purchase()"><ion-icon name="basket"></ion-icon>
+</button>
+  </ion-toolbar>
+</ion-footer>
