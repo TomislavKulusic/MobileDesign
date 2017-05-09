@@ -1,0 +1,28 @@
+page-login {
+  #login {
+    width: 84%;
+    top: 35%;
+    height: auto;
+    position: absolute;
+    left: 8%;
+    padding: 5%;
+    background-color: white;
+    .button-md {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+  ion-content {
+    background-color: rgb(46, 204, 113) !important;
+  }
+  .item-md {
+    margin-top: 2%;
+  }
+  ion-icon {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 33%;
+    top: 15%
+  }
+}

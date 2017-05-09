@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>purchase</ion-title>
+    <ion-title>Cart</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
@@ -20,7 +20,8 @@
 
   <ion-card>
     <ion-item>
-      Price: {{totalPrice}}$
+      <p id = "total">Price: {{totalPrice}}$</p>
+      <button ion-button round (click) = "openPaymentMethod()">Buy</button>
     </ion-item>
   </ion-card>
 </ion-content>

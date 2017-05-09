@@ -4,13 +4,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>   
+    <ion-title>Groceries</ion-title>   
   </ion-navbar>
   
 </ion-header>
 
 <ion-content padding>
-  <h3>Groceries</h3>
+  <h3>List of Groceries in {{data}}</h3>
   <ion-card *ngFor="let g of groceries">
     <ion-item>
       <p id = "name">{{g.name}}</p>

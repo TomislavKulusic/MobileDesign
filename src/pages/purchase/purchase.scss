@@ -7,14 +7,31 @@ page-purchase {
     float: right;
     font-size: 1.0em;
   }
-
   img {
     float: left;
     width: 50px;
     height: 50px;
   }
-
   .item-md p {
     margin: 6%;
+  }
+  #total {
+    font-size: 1.0em;
+    float: left;
+    margin: 6%;
+  }
+  button {
+    float: right;
+    margin: 6%;
+  }
+  .button-md {
+    background: rgb(46, 204, 113);
+    width: 50px;
+    height: 50px !important;
+    border-radius: 100%;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    bottom: 0;
   }
 }

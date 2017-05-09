@@ -3,16 +3,16 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Stores</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding> 
-  <h3>List of Nerby Stores</h3>
+  <h3>List of Stores</h3>
   <ion-card *ngFor="let s of stores" (click) = "openStore(s)">
     <ion-item>
       <p id = "name">{{s.name}}</p>
        <p id = "address">{{s.address}}</p>
-       <img src = "{{s.image}}">
+       <!--<img src = "{{s.image}}">-->
     </ion-item>
   </ion-card>
 </ion-content>

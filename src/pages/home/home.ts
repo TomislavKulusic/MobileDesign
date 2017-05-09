@@ -47,7 +47,9 @@ export class HomePage {
   openStore(storeData) {
     localStorage.clear();
     localStorage.setItem("store", JSON.stringify(storeData));
-    this.navCtrl.setRoot(this.storePage);
+    this.navCtrl.setRoot(this.storePage, {
+      data: this.store.name
+    });
   }
 
 }

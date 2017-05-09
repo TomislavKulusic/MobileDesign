@@ -24,9 +24,17 @@ export class StorePage {
   additem: number = 0;
   basketItem: BasketItem;
   basket: Basket = new Basket();
+  data:any;
+  
+
+  
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.currentStore = JSON.parse(localStorage.getItem("store"));
+    this.data = this.navParams.get('data');
+    console.log(this.data); 
+    
     this.listGroceries();
   }
   listGroceries() {
@@ -34,7 +42,6 @@ export class StorePage {
 
     for (var index = 0; index < this.currentStore["groceries"].length; index++) {
 
-      console.log(this.currentStore["groceries"][index]);
       this.grocery = new Grocery();
       this.grocery.img = this.currentStore["groceries"][index].img;
       this.grocery.name = this.currentStore["groceries"][index].name;
@@ -46,7 +53,6 @@ export class StorePage {
   add(item) {
     this.additem++;
     this.basketItem = new BasketItem();
-    console.log(item);
     this.basketItem.name = item.name;
     this.basketItem.price = item.price;
     this.basketItem.image = item.img;
@@ -55,7 +61,9 @@ export class StorePage {
   }
   purchase() {
     this.navCtrl.push(this.PurchasePage, {
+      name: this.data,
       data: this.basket
+      
     });
   }
 }

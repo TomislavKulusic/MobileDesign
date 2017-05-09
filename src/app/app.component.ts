@@ -1,3 +1,5 @@
+import { PurchaseHistory } from './../pages/purchase-history/purchase-history';
+import { Login } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -5,13 +7,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = Login;
 
   pages: Array<{ title: string, component: any }>;
 
@@ -21,7 +24,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Stores', component: HomePage },
-      
+      { title: 'History', component: PurchaseHistory }
+
 
     ];
 
@@ -39,6 +43,11 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if (page === PurchaseHistory) {
+      this.nav.push(page.component);
+    } else {
+
+      this.nav.setRoot(page.component);
+    }
   }
 }
