@@ -2,31 +2,25 @@ page-store-page {
   .card {
     width: 60%;
     margin: 5% 20%;
-     border: 1px solid rgb(46, 204, 113);
+    border: 1px solid rgb(46, 204, 113);
     .button-md {
-      background-color:  rgb(46, 204, 113);
+      background-color: rgb(46, 204, 113);
       position: absolute;
       bottom: 0;
       right: 0;
       margin: 3%;
     }
-
     #price {
-      
       position: absolute;
       bottom: 0;
       left: 0;
       margin: 3%;
-      
     }
-
     #name {
-      
       position: absolute;
       top: 0;
       left: 0;
       margin: 3%;
-      
     }
   }
   .card .item {
@@ -35,7 +29,7 @@ page-store-page {
   .footer-md {
     border-top: 1px solid rgb(46, 204, 113);
     .button-md {
-      background:rgb(46, 204, 113);
+      background: rgb(46, 204, 113);
       width: 50px;
       height: 50px;
       border-radius: 100%;
@@ -47,6 +41,10 @@ page-store-page {
     .toolbar-background {
       background-color: white;
     }
+    ion-icon {
+      top: 43%;
+      left: 47%;
+    }
   }
   ion-icon {
     position: absolute;
@@ -54,14 +52,19 @@ page-store-page {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 25px;
-
-    
-      
-   
+    font-size: 30px;
   }
-
-  
-
-  
+  #more {
+    position: absolute;
+    left: 85%;
+    top: 20%;
+  }
+  ion-menu {
+    ion-icon {
+      position: absolute;
+      font-size: 1.5em;
+      margin: 0%;
+      left: 85%;
+    }
+  }
 }

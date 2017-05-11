@@ -1,3 +1,4 @@
+import { StorePage } from './../pages/store-page/store-page';
 import { PurchaseHistory } from './../pages/purchase-history/purchase-history';
 import { Login } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
@@ -15,8 +16,10 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = Login;
+  storePage:StorePage;
 
   pages: Array<{ title: string, component: any }>;
+  categories: Array<string>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -28,6 +31,8 @@ export class MyApp {
 
 
     ];
+
+    this.categories = ["Show All","Fruit and Vegi","Drinks","Milk Products"];
 
   }
 
@@ -50,4 +55,6 @@ export class MyApp {
       this.nav.setRoot(page.component);
     }
   }
+
+
 }

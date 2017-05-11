@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Basket } from "../../app/Model/Basket";
 
+
 /**
  * Generated class for the StorePage page.
  *
@@ -24,30 +25,48 @@ export class StorePage {
   additem: number = 0;
   basketItem: BasketItem;
   basket: Basket = new Basket();
-  data:any;
-  
-
-  
-
+  data: any;
+  categories: Array<string>;
+  currentSort: string = "all";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.categories = ["all", "Fruit and Vegies", "Drinks", "Milk Products"];
     this.currentStore = JSON.parse(localStorage.getItem("store"));
     this.data = this.navParams.get('data');
-    console.log(this.data); 
-    
-    this.listGroceries();
+
+
+    this.listGroceries(this.currentSort);
   }
-  listGroceries() {
+  listGroceries(sort) {
+    console.log(sort);
+
+    if (!this.groceries) {
+      console.log("rip")
+    } else {
+      console.log("dobroe");
+    }
     this.groceries = new Array<Grocery>();
 
     for (var index = 0; index < this.currentStore["groceries"].length; index++) {
 
-      this.grocery = new Grocery();
-      this.grocery.img = this.currentStore["groceries"][index].img;
-      this.grocery.name = this.currentStore["groceries"][index].name;
-      this.grocery.price = this.currentStore["groceries"][index].price;
+      if (sort === "all") {
 
-      this.groceries.push(this.grocery);
+        this.grocery = new Grocery();
+        this.grocery.img = this.currentStore["groceries"][index].img;
+        this.grocery.name = this.currentStore["groceries"][index].name;
+        this.grocery.price = this.currentStore["groceries"][index].price;
+
+        this.groceries.push(this.grocery);
+
+      } else if (this.currentStore["groceries"][index].type === sort) {
+        console.log("AAAA");
+        this.grocery = new Grocery();
+        this.grocery.img = this.currentStore["groceries"][index].img;
+        this.grocery.name = this.currentStore["groceries"][index].name;
+        this.grocery.price = this.currentStore["groceries"][index].price;
+
+        this.groceries.push(this.grocery);
+      }
     }
   }
   add(item) {
@@ -63,7 +82,11 @@ export class StorePage {
     this.navCtrl.push(this.PurchasePage, {
       name: this.data,
       data: this.basket
-      
+
     });
+  }
+
+  sort(c) {
+    this.listGroceries(c);
   }
 }

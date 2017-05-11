@@ -1,9 +1,8 @@
+import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Purchase } from './../../app/Model/Purchase';
 import { StorePage } from './../store-page/store-page';
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { LocalNotifications } from '@ionic-native/local-notifications';
-
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the FinishPayment page.
@@ -22,14 +21,13 @@ export class FinishPayment {
   data: any;
   name: any;
   totalPrice: any;
-  cash: boolean = false;
-  card: boolean = false;
+
   purchase: Purchase;
   historyList: Array<Purchase>;
   history: any;
   newPurchase: Purchase;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private localNotifications: LocalNotifications) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private localNotifications: LocalNotifications, public alertCtrl: AlertController) {
 
     this.localNotifications.schedule({
       id: 1,
@@ -66,12 +64,6 @@ export class FinishPayment {
     this.data = this.navParams.get('data');
     this.totalPrice = this.navParams.get('totalPrice');
 
-    if (this.data === "Card") {
-      this.card = true;
-    } else if (this.data === "Cash") {
-      this.cash = true;
-    }
-
   }
 
   getCard(smth) {
@@ -79,10 +71,20 @@ export class FinishPayment {
   }
 
   gotoStore() {
+
     this.purchase = new Purchase();
     this.purchase.price = this.totalPrice;
     this.historyList.push(this.purchase);
     localStorage.setItem("purchase", JSON.stringify(this.historyList));
+
+    let alert = this.alertCtrl.create({
+      title: 'Purchase completed',
+      subTitle: 'You have sucessfully purchased',
+      buttons: ['OK']
+    });
+    alert.present();
+
+
 
     this.navCtrl.setRoot(this.store)
   }

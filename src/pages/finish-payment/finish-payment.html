@@ -6,35 +6,14 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title *ngIf="cash">Cash Payment</ion-title>
-    <ion-title *ngIf="card">Card Payment</ion-title>
+    <ion-title>Finish Payment</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <div class="container " *ngIf="cash">
-  <h4>CASH PAYMENT</h4>
-  <p>Store Name: {{name}}</p>
-  <p>Price: {{totalPrice}}$</p>
-
-  <button ion-button (click) = "gotoStore()">Buy</button>
-
+  <div class="container">
+    <h4>Cash Payment</h4>
+    <p>Price: {{totalPrice}}$</p>
+    <button ion-button (click)="gotoStore()">Buy</button>
   </div>
-  <div class="container " *ngIf="card">
-    <h4>Card Payment</h4>
-    <!--<ion-list radio-group>
-      <ion-item>
-        <ion-label>Friends</ion-label>
-        <ion-radio value="friends" ng-model = "radiovalue" checked></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Family</ion-label>
-        <ion-radio value="family"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Enemies</ion-label>
-        <ion-radio value="enemies"></ion-radio>
-      </ion-item>
-      <button ion-button (click) = "getCard(radiovalue)">Default</button>
-    </ion-list>-->
-  </div>
+ 
 </ion-content>

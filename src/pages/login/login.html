@@ -11,11 +11,11 @@
   <div id="login">
     <form (ngSubmit)="submit()">
       <ion-item>
-        <ion-input type="text" [(ngModel)]="loginInfo.username" name="username"></ion-input>
+        <ion-input type="text" [(ngModel)]="loginInfo.username" name="username" placeholder="username"></ion-input>
       </ion-item>
       <ion-item>
         
-        <ion-input [(ngModel)]="loginInfo.password" name="password"></ion-input>
+        <ion-input [(ngModel)]="loginInfo.password" type = "password" name="password" placeholder="password"></ion-input>
       </ion-item>
       <button ion-button type="submit" block>Sign in</button>
     </form>

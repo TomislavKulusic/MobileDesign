@@ -16,6 +16,7 @@ export class HomePage {
   store: Store;
   stores: Array<Store> = new Array<Store>();
   grocery: Grocery;
+  type:string;
 
   constructor(public navCtrl: NavController) {
     localStorage.clear();
@@ -31,9 +32,11 @@ export class HomePage {
       this.store.image = this.data[index].image;
 
       for (var counter = 0; counter < this.data[index]["items"].length; counter++) {
+        this.type = this.data[index]["items"][counter].categoryName;
 
         for (var c = 0; c < this.data[index]["items"][counter]["items"].length; c++) {
           this.grocery = new Grocery();
+          this.grocery.type = this.type;
           this.grocery.img = this.data[index]["items"][counter]["items"][c].img;
           this.grocery.name = this.data[index]["items"][counter]["items"][c].name;
           this.grocery.price = this.data[index]["items"][counter]["items"][c].price;
@@ -45,10 +48,11 @@ export class HomePage {
     }
   }
   openStore(storeData) {
+    console.log(storeData);
     localStorage.clear();
     localStorage.setItem("store", JSON.stringify(storeData));
     this.navCtrl.setRoot(this.storePage, {
-      data: this.store.name
+      data: storeData.name
     });
   }
 

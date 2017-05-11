@@ -1,61 +1,123 @@
 [{
-    "name": "Ducan",
-    "address": "lokacija1",
+    "name": "Store",
+    "address": "Street 1",
     "image": "./../../assets/images/store1.jpg",
     "items": [{
-      "categoryName": "Fruit and Vegies",
-      "items": [{
-          "name": "Apple",
-          "price": 3,
-          "img": "./../../assets/images/apple.jpg"
-        },
-        {
-          "name": "Banana",
-          "price": 7.3,
-          "img": "./../../assets/images/banana.jpg"
-        },
-        {
-          "name": "Blueberry",
-          "price": 10.42,
-          "img": "./../../assets/images/blueberry.jpg"
-        },
-        {
-          "name": "Grape",
-          "price": 4.5,
-          "img": "./../../assets/images/grape.jpg"
-        },
-        {
-          "name": "Peas",
-          "price": 2.66,
-          "img": "./../../assets/images/peas.jpg"
-        },
-        {
-          "name": "Orange",
-          "price": 3.32,
-          "img": "./../../assets/images/orange.jpg"
-        },
-        {
-          "name": "Lemon",
-          "price": 12.12,
-          "img": "./../../assets/images/lemon.jpg"
-        },
-        {
-          "name": "Watermelon",
-          "price": 1.32,
-          "img": "./../../assets/images/watermelon.jpg"
-        },
-        {
-          "name": "Strawberry",
-          "price": 12.2,
-          "img": "./../../assets/images/strawberry.jpg"
-        }
-      ]
-    }]
+        "categoryName": "Fruit and Vegies",
+        "items": [{
+            "name": "Apple",
+            "price": 3,
+            "img": "./../../assets/images/apple.jpg"
+          },
+          {
+            "name": "Banana",
+            "price": 7.3,
+            "img": "./../../assets/images/banana.jpg"
+          },
+          {
+            "name": "Blueberry",
+            "price": 10.42,
+            "img": "./../../assets/images/blueberry.jpg"
+          },
+          {
+            "name": "Grape",
+            "price": 4.5,
+            "img": "./../../assets/images/grape.jpg"
+          },
+          {
+            "name": "Peas",
+            "price": 2.66,
+            "img": "./../../assets/images/peas.jpg"
+          },
+          {
+            "name": "Orange",
+            "price": 3.32,
+            "img": "./../../assets/images/orange.jpg"
+          },
+          {
+            "name": "Lemon",
+            "price": 12.12,
+            "img": "./../../assets/images/lemon.jpg"
+          },
+          {
+            "name": "Watermelon",
+            "price": 1.32,
+            "img": "./../../assets/images/watermelon.jpg"
+          },
+          {
+            "name": "Strawberry",
+            "price": 12.2,
+            "img": "./../../assets/images/strawberry.jpg"
+          }
+        ]
+      },
+      {
+        "categoryName": "Drinks",
+        "items": [{
+            "name": "Apple Juice",
+            "price": 3,
+            "img": "./../../assets/images/aj.jpg"
+          },
+          {
+            "name": "Beer",
+            "price": 15,
+            "img": "./../../assets/images/beer.jpg"
+          },
+          {
+            "name": "Wine",
+            "price": 21,
+            "img": "./../../assets/images/wine.jpg"
+          },
+          {
+            "name": "Water",
+            "price": 3,
+            "img": "./../../assets/images/water.jpg"
+          },
+          {
+            "name": "Orange Juice",
+            "price": 9,
+            "img": "./../../assets/images/oj.jpg"
+          }
+        ]
+      },
+      {
+        "categoryName": "Milk Products",
+        "items": [{
+            "name": "Milk",
+            "price": 3,
+            "img": "./../../assets/images/milk.jpg"
+          },
+          {
+            "name": "Cheese",
+            "price": 15,
+            "img": "./../../assets/images/cheese.jpg"
+          },
+          {
+            "name": "Yogurt",
+            "price": 21,
+            "img": "./../../assets/images/yogurt.jpg"
+          },
+          {
+            "name": "Pudding",
+            "price": 3,
+            "img": "./../../assets/images/pudding.jpg"
+          },
+          {
+            "name": "Butter",
+            "price": 9,
+            "img": "./../../assets/images/butter.jpg"
+          }
+        ]
+      }
+
+    ]
+
   },
 
+
   {
-    "name": "Ducan1",
-    "address": "lokacija2",
+    "name": "Store 2",
+    "address": "Street 2",
     "image": "./../../assets/images/store2.jpg",
     "items": [{
       "categoryName": "Fruit and Vegies",
@@ -106,73 +168,190 @@
           "img": "./../../assets/images/broccoli.jpg"
         }
       ]
+    }, {
+      "categoryName": "Drinks",
+      "items": [{
+          "name": "Apple Juice",
+          "price": 3,
+          "img": "./../../assets/images/aj.jpg"
+        },
+        {
+          "name": "Beer",
+          "price": 15,
+          "img": "./../../assets/images/beer.jpg"
+        },
+        {
+          "name": "Wine",
+          "price": 21,
+          "img": "./../../assets/images/wine.jpg"
+        },
+        {
+          "name": "Water",
+          "price": 3,
+          "img": "./../../assets/images/water.jpg"
+        },
+        {
+          "name": "Orange Juice",
+          "price": 9,
+          "img": "./../../assets/images/oj.jpg"
+        }
+      ]
+    }, {
+      "categoryName": "Milk Products",
+      "items": [{
+          "name": "Milk",
+          "price": 3,
+          "img": "./../../assets/images/milk.jpg"
+        },
+        {
+          "name": "Cheese",
+          "price": 15,
+          "img": "./../../assets/images/cheese.jpg"
+        },
+        {
+          "name": "Yogurt",
+          "price": 21,
+          "img": "./../../assets/images/yogurt.jpg"
+        },
+        {
+          "name": "Pudding",
+          "price": 3,
+          "img": "./../../assets/images/pudding.jpg"
+        },
+        {
+          "name": "Butter",
+          "price": 9,
+          "img": "./../../assets/images/butter.jpg"
+        }
+      ]
     }]
   },
 
   {
-    "name": "Ducan2",
-    "address": "lokacija2",
+    "name": "Store 3",
+    "address": "Street 3",
     "image": "./../../assets/images/store3.jpg",
     "items": [{
-      "categoryName": "Fruit and Vegies",
-      "items": [{
-          "name": "Apple",
-          "price": 3,
-          "img": "./../../assets/images/apple.jpg"
-        },
-        {
-          "name": "Banana",
-          "price": 7.3,
-          "img": "./../../assets/images/banana.jpg"
-        },
-        {
-          "name": "Blueberry",
-          "price": 10.42,
-          "img": "./../../assets/images/blueberry.jpg"
-        },
+        "categoryName": "Fruit and Vegies",
+        "items": [{
+            "name": "Apple",
+            "price": 3,
+            "img": "./../../assets/images/apple.jpg"
+          },
+          {
+            "name": "Banana",
+            "price": 7.3,
+            "img": "./../../assets/images/banana.jpg"
+          },
+          {
+            "name": "Blueberry",
+            "price": 10.42,
+            "img": "./../../assets/images/blueberry.jpg"
+          },
 
-        {
-          "name": "Peas",
-          "price": 2.66,
-          "img": "./../../assets/images/peas.jpg"
-        },
-        {
-          "name": "Orange",
-          "price": 3.32,
-          "img": "./../../assets/images/orange.jpg"
-        },
-        {
-          "name": "Lemon",
-          "price": 12.12,
-          "img": "./../../assets/images/lemon.jpg"
-        },
-        {
-          "name": "Strawberry",
-          "price": 12.2,
-          "img": "./../../assets/images/strawberry.jpg"
-        },
-        {
-          "name": "Carrot",
-          "price": 8,
-          "img": "./../../assets/images/carrot.jpg"
-        },
-        {
-          "name": "Broccoli",
-          "price": 6.42,
-          "img": "./../../assets/images/broccoli.jpg"
-        },
-        {
-          "name": "Pineapple",
-          "price": 15.12,
-          "img": "./../../assets/images/pineapple.jpg"
-        },
-        {
-          "name": "Cauliflower",
-          "price": 2.22,
-          "img": "./../../assets/images/cauliflower.jpg"
-        }
-      ]
-    }]
+          {
+            "name": "Peas",
+            "price": 2.66,
+            "img": "./../../assets/images/peas.jpg"
+          },
+          {
+            "name": "Orange",
+            "price": 3.32,
+            "img": "./../../assets/images/orange.jpg"
+          },
+          {
+            "name": "Lemon",
+            "price": 12.12,
+            "img": "./../../assets/images/lemon.jpg"
+          },
+          {
+            "name": "Strawberry",
+            "price": 12.2,
+            "img": "./../../assets/images/strawberry.jpg"
+          },
+          {
+            "name": "Carrot",
+            "price": 8,
+            "img": "./../../assets/images/carrot.jpg"
+          },
+          {
+            "name": "Broccoli",
+            "price": 6.42,
+            "img": "./../../assets/images/broccoli.jpg"
+          },
+          {
+            "name": "Pineapple",
+            "price": 15.12,
+            "img": "./../../assets/images/pineapple.jpg"
+          },
+          {
+            "name": "Cauliflower",
+            "price": 2.22,
+            "img": "./../../assets/images/cauliflower.jpg"
+          }
+        ]
+      }, {
+        "categoryName": "Drinks",
+        "items": [{
+            "name": "Apple Juice",
+            "price": 3,
+            "img": "./../../assets/images/aj.jpg"
+          },
+          {
+            "name": "Beer",
+            "price": 15,
+            "img": "./../../assets/images/beer.jpg"
+          },
+          {
+            "name": "Wine",
+            "price": 21,
+            "img": "./../../assets/images/wine.jpg"
+          },
+          {
+            "name": "Water",
+            "price": 3,
+            "img": "./../../assets/images/water.jpg"
+          },
+          {
+            "name": "Orange Juice",
+            "price": 9,
+            "img": "./../../assets/images/oj.jpg"
+          }
+
+        ]
+
+
+      },
+      {
+        "categoryName": "Milk Products",
+        "items": [{
+            "name": "Milk",
+            "price": 3,
+            "img": "./../../assets/images/milk.jpg"
+          },
+          {
+            "name": "Cheese",
+            "price": 15,
+            "img": "./../../assets/images/cheese.jpg"
+          },
+          {
+            "name": "Yogurt",
+            "price": 21,
+            "img": "./../../assets/images/yogurt.jpg"
+          },
+          {
+            "name": "Pudding",
+            "price": 3,
+            "img": "./../../assets/images/pudding.jpg"
+          },
+          {
+            "name": "Butter",
+            "price": 9,
+            "img": "./../../assets/images/butter.jpg"
+          }
+        ]
+      }
+    ]
   }
 
 

@@ -1,4 +1,4 @@
-import { PaymentMethod } from './../payment-method/payment-method';
+import { FinishPayment } from './../finish-payment/finish-payment';
 import { BasketItem } from './../../app/Model/BasketItem';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
@@ -16,7 +16,7 @@ import { ModalController } from 'ionic-angular';
   templateUrl: 'purchase.html',
 })
 export class Purchase {
-  paymentMethod = PaymentMethod
+  FinishPayment = FinishPayment;
   list: Array<BasketItem> = new Array<BasketItem>();
   data: any;
   name:any;
@@ -45,7 +45,7 @@ export class Purchase {
   }
 
   openPaymentMethod() {
-    this.navCtrl.push(this.paymentMethod, {
+    this.navCtrl.push(this.FinishPayment, {
       name: this.name,
       totalPrice: this.totalPrice,
     });

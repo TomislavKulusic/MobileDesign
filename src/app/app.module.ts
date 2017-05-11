@@ -1,7 +1,7 @@
+import { LocalNotifications } from '@ionic-native/local-notifications';
 import { PurchaseHistory } from './../pages/purchase-history/purchase-history';
 import { Login } from './../pages/login/login';
 import { FinishPayment } from './../pages/finish-payment/finish-payment';
-import { PaymentMethod } from './../pages/payment-method/payment-method';
 import { Purchase } from './../pages/purchase/purchase';
 import { StorePage } from './../pages/store-page/store-page';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,7 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     StorePage,
     Purchase,
-    PaymentMethod,
+    
     FinishPayment,
     Login,
     PurchaseHistory
@@ -44,7 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     StorePage,
     Purchase,
-    PaymentMethod,
+    
     FinishPayment,
     Login,
     PurchaseHistory
@@ -54,6 +54,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

@@ -1,22 +1,21 @@
-
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle="left" start>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Groceries</ion-title>   
+    <ion-title>Groceries</ion-title>
+    <button id="more" ion-button menuToggle="right" end>
+    <ion-icon  name="more"></ion-icon>
+    </button>
   </ion-navbar>
-  
 </ion-header>
-
 <ion-content padding>
   <h3>List of Groceries in {{data}}</h3>
   <ion-card *ngFor="let g of groceries">
     <ion-item>
-      <p id = "name">{{g.name}}</p>
-      <p id = "price">Price: {{g.price}}</p>
-      <img src = "{{g.img}}">
-
+      <p id="name">{{g.name}}</p>
+      <p id="price">Price: {{g.price}}</p>
+      <img src="{{g.img}}">
       <button ion-button round (click)="add(g);">Add</button>
     </ion-item>
   </ion-card>
@@ -28,3 +27,20 @@
 </button>
   </ion-toolbar>
 </ion-footer>
+
+<ion-menu [content]="content" side="right" id="menu2">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Categories</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor = "let c of categories" (click)="sort(c)">
+      <ion-icon md="md-cart"></ion-icon>
+      <p>{{c}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>-->
